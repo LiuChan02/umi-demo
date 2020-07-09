@@ -5,7 +5,6 @@ export default [
     component: '../layouts/UserLayout',
     routes: [
       {
-        // name: 'login',
         path: '/user/login',
         component: './login',
       },
@@ -20,16 +19,17 @@ export default [
         component: '../layouts/BasicLayout',
         authority: ['admin', 'user'],
         routes: [
-          // {
-          //   path: '/',
-          //   redirect: '/welcome',
-          // },
+          {
+            path: '/',
+            component: './Home',
+          },
           {
             path: '/welcome/:user',
             name: 'welcome',
             icon: 'smile',
             component: './Welcome',
           },
+          
           {
             path: '/admin',
             name: 'admin',

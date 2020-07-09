@@ -21,7 +21,7 @@ import Authorized from '@/utils/Authorized';
 import RightContent from '@/components/GlobalHeader/RightContent';
 import { ConnectState } from '@/models/connect';
 import { isAntDesignPro, getAuthorityFromRouter } from '@/utils/utils';
-import logo from '../assets/logo.svg';
+import logo from '../assets/Ivy.png';
 
 const noMatch = (
   <Result
@@ -81,9 +81,9 @@ const defaultFooterDom = (
         blankTarget: true,
       },
       {
-        key: 'Ant Design',
-        title: 'Ant Design',
-        href: 'https://ant.design',
+        key: 'Ivy',
+        title: '项目源代码',
+        href: 'https://github.com/LiuChan02/umi-demo',
         blankTarget: true,
       },
     ]}
